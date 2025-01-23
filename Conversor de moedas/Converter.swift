@@ -21,7 +21,7 @@ struct Converter {
         guard from != to else { return amount }
         
         let rateToUSD: [Coins: Double] = [
-            .BRL: 0.016,
+            .BRL: 0.16,
             .EUR: 1.03,
             .USD: 1,
             .BTC: 100000,
