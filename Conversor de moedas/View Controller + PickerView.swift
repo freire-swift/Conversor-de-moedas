@@ -1,3 +1,11 @@
+//
+//  View Controller + PickerView.swift
+//  Conversor de moedas
+//
+//  Created by Pedro Henrique Freire de Oliveira on 22/01/25.
+//
+import UIKit
+
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
