@@ -8,22 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
+    
     let currencies = Coins.allCases
     let converter = Converter()
     
     var selectedFromCurrency: Coins = .USD
     var selectedToCurrency: Coins = .BRL
     
-    @IBOutlet weak var amountLabel: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var fromPickerView: UIPickerView!
     @IBOutlet weak var toPickerView: UIPickerView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBAction func ConvertButton(_ sender: Any) {
         resultLabel.isHidden = false
-        guard let amountText = amountLabel.text?.replacingOccurrences(of: ",", with: "."),
+        guard let amountText = amountTextField.text?.replacingOccurrences(of: ",", with: "."),
               let amount = Double(amountText) else {
-            amountLabel.text = "Valor inválido"
+            amountTextField.text = "Valor inválido"
             resultLabel.isHidden = true
             return
         }
@@ -32,19 +32,38 @@ class ViewController: UIViewController, UITextFieldDelegate {
         resultLabel.text = String("\(result) \(selectedToCurrency.rawValue)").replacingOccurrences(of: ".", with: ",")
     }
     
+    
     func setup() {
         fromPickerView.delegate = self
         fromPickerView.dataSource = self
         toPickerView.delegate = self
         toPickerView.dataSource = self
         
-        amountLabel.delegate = self
-        amountLabel.keyboardType = .decimalPad
+        amountTextField.delegate = self
+        amountTextField.keyboardType = .decimalPad
+        addDoneKeyboardButton()
         
         resultLabel.isHidden = true
         
         fromPickerView.selectRow(2, inComponent: 0, animated: false)
         toPickerView.selectRow(0, inComponent: 0, animated: false)
+    }
+    
+    func addDoneKeyboardButton(){
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "OK", style: .plain, target: self, action: #selector(dismissKeyboard))
+        
+        let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        toolbar.items = [spacer, doneButton]
+        
+        amountTextField.inputAccessoryView = toolbar
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
     
     override func viewDidLoad() {
