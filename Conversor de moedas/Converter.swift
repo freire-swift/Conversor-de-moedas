@@ -21,13 +21,14 @@ struct Converter {
         guard from != to else { return amount }
         
         let rateToUSD: [Coins: Double] = [
-            .BRL: 0.16,
-            .EUR: 1.03,
+            .BRL: 0.1707,
+            .EUR: 1.0423,
             .USD: 1,
-            .BTC: 100000,
-            .ETH: 3400,
-            .SOL: 203,
+            .BTC: 104466.9,
+            .ETH: 3146.16,
+            .SOL: 235.205,
         ]
+        //last update 01/29/2025 22:35
         
         guard let rateFrom = rateToUSD[from], let rateTo = rateToUSD[to] else {
             fatalError("Coins not supported")
