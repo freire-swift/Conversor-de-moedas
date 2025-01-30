@@ -17,48 +17,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de moedas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bz-LW-YlH">
-                                <rect key="frame" x="16" y="59" width="361" height="32.333333333333343"/>
+                                <rect key="frame" x="16" y="84" width="361" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-qt-NyD">
-                                <rect key="frame" x="16" y="216.33333333333337" width="361" height="180"/>
+                                <rect key="frame" x="16" y="251.33333333333337" width="361" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="nbU-z6-R5R"/>
                                 </constraints>
                             </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira a quantia" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zC-yz-per">
-                                <rect key="frame" x="16" y="121.33333333333331" width="361" height="42"/>
+                                <rect key="frame" x="16" y="141.33333333333334" width="361" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a moeda:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foh-tQ-Bcu">
-                                <rect key="frame" x="16" y="173.33333333333334" width="361" height="33"/>
+                                <rect key="frame" x="16" y="208.33333333333334" width="361" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converter para:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P61-f5-yQW">
-                                <rect key="frame" x="16" y="416.33333333333331" width="361" height="33"/>
+                                <rect key="frame" x="16" y="451.33333333333331" width="361" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acz-sq-sIc">
-                                <rect key="frame" x="16" y="459.33333333333326" width="361" height="180"/>
+                                <rect key="frame" x="16" y="494.33333333333326" width="361" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="b0B-pV-qP4"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-va-RpJ">
-                                <rect key="frame" x="16" y="731.33333333333337" width="361" height="33"/>
+                                <rect key="frame" x="16" y="771.33333333333337" width="361" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aT9-Hz-wVT">
-                                <rect key="frame" x="16" y="659.33333333333337" width="361" height="47"/>
+                                <rect key="frame" x="16" y="699.33333333333337" width="361" height="47"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Converter">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
@@ -71,7 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aT9-Hz-wVT" firstAttribute="top" secondItem="acz-sq-sIc" secondAttribute="bottom" constant="20" id="0MR-67-Vfb"/>
+                            <constraint firstItem="aT9-Hz-wVT" firstAttribute="top" secondItem="acz-sq-sIc" secondAttribute="bottom" constant="25" id="0MR-67-Vfb"/>
                             <constraint firstItem="P61-f5-yQW" firstAttribute="top" secondItem="y7n-qt-NyD" secondAttribute="bottom" constant="20" id="45k-X7-Roa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="foh-tQ-Bcu" secondAttribute="trailing" constant="16" id="4PE-qk-4zK"/>
                             <constraint firstItem="y7n-qt-NyD" firstAttribute="top" secondItem="foh-tQ-Bcu" secondAttribute="bottom" constant="10" id="6f3-tf-7hT"/>
@@ -85,20 +85,20 @@
                             <constraint firstItem="y7n-qt-NyD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="brV-5X-btT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acz-sq-sIc" secondAttribute="trailing" constant="16" id="fQ5-HF-1h7"/>
                             <constraint firstItem="acz-sq-sIc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iPJ-cF-eoE"/>
-                            <constraint firstItem="9bz-LW-YlH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lfH-K5-duY"/>
+                            <constraint firstItem="9bz-LW-YlH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="lfH-K5-duY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9bz-LW-YlH" secondAttribute="trailing" constant="16" id="loL-11-Dbm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zC-yz-per" secondAttribute="trailing" constant="16" id="lxD-Je-A5z"/>
                             <constraint firstItem="acz-sq-sIc" firstAttribute="top" secondItem="P61-f5-yQW" secondAttribute="bottom" constant="10" id="nKV-AB-vgL"/>
                             <constraint firstItem="2zC-yz-per" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o9e-mx-UIR"/>
                             <constraint firstItem="JVb-va-RpJ" firstAttribute="top" secondItem="aT9-Hz-wVT" secondAttribute="bottom" constant="25" id="oGs-ag-wLW"/>
                             <constraint firstItem="9bz-LW-YlH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qh1-x8-mEx"/>
-                            <constraint firstItem="2zC-yz-per" firstAttribute="top" secondItem="9bz-LW-YlH" secondAttribute="bottom" constant="30" id="spZ-KY-t9B"/>
+                            <constraint firstItem="2zC-yz-per" firstAttribute="top" secondItem="9bz-LW-YlH" secondAttribute="bottom" constant="25" id="spZ-KY-t9B"/>
                             <constraint firstItem="JVb-va-RpJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="w7y-qV-Lmv"/>
-                            <constraint firstItem="foh-tQ-Bcu" firstAttribute="top" secondItem="2zC-yz-per" secondAttribute="bottom" constant="10" id="z4X-Q7-Q1m"/>
+                            <constraint firstItem="foh-tQ-Bcu" firstAttribute="top" secondItem="2zC-yz-per" secondAttribute="bottom" constant="25" id="z4X-Q7-Q1m"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="amountLabel" destination="2zC-yz-per" id="Z61-3d-YBC"/>
+                        <outlet property="amountTextField" destination="2zC-yz-per" id="Z61-3d-YBC"/>
                         <outlet property="fromPickerView" destination="y7n-qt-NyD" id="05W-nC-WQY"/>
                         <outlet property="resultLabel" destination="JVb-va-RpJ" id="WMB-tw-fJR"/>
                         <outlet property="toPickerView" destination="acz-sq-sIc" id="3qV-NJ-Slr"/>
