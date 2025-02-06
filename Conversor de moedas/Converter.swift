@@ -31,7 +31,7 @@ struct Converter {
         //last update 01/29/2025 22:35
         
         guard let rateFrom = rateToUSD[from], let rateTo = rateToUSD[to] else {
-            fatalError("Coins not supported")
+            return Double()
         }
         
         let result = amount * rateFrom / rateTo
